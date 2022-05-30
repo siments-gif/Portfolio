@@ -1,0 +1,115 @@
+.portfolio__intro{
+    display: flex;
+}
+
+.portfolio__intro-content {
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+
+    margin-right: 5rem;
+}
+
+.portfolio__intro-content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: -0.04em;
+}
+
+.portfolio__intro-content p {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--color-text);
+
+    margin-top: 1.5rem;
+}
+
+.portfolio__intro-content__input {
+    width: 100%;
+    margin: 2rem 0 1rem;
+
+    display: flex;
+}
+
+.portfolio__intro-content__input input {
+    flex: 0.6;
+    width: 100%;
+    min-height: 50px;
+    background: var(--gradient__bg);
+    padding: 0 1rem;
+    outline: none;
+    color: #fff;
+    font-family: var(--font-family);
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--gradient-text);
+    border: 7px solid rgb(0, 0, 65);
+    transform: matrix(1, 0, 0, 1, 0, 0.8);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+.portfolio__intro-content__input ::placeholder {
+    color: #000;
+    font-weight: 700;
+}
+
+.portfolio__intro-content__input button {
+    flex: 0.2;
+    width: 100%;
+    min-height: 50px;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: rgb(0, 238, 255);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    background: var(--gradient-text);
+    transform: matrix(1, 0, 0, 1, -5, 0.8);
+
+    cursor: pointer;
+    outline: none;
+    padding: 0 1rem;
+    border: none;
+}
+
+.start:hover {
+    transform: scale3d(1.1,1.1,0.2);
+    transition-duration: 2;
+}
+
+@media screen and (max-width: 490px) {
+    .portfolio__intro-content h1 {
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .portfolio__intro-content p {
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .portfolio__intro-content__input input {
+        flex: 2;
+    }
+
+    .portfolio__intro-content__input button {
+        flex: 1;
+    }
+}
